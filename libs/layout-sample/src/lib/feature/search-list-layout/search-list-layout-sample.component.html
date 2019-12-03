@@ -1,13 +1,13 @@
 <sds-page class="condensed">
     <h2 class="usa-sr-only">Results List</h2>
     <!-- =============== PAGE OPTIONS =============== -->
-    <sds-page-options>
+    <sds-page-options class="display-flex flex-row flex-align-stretch">
         <!-- =============== TOOLBAR =============== -->
-        <sds-toolbar #toolbar="sdsToolbar" class="tablet:grid-col-auto top-205">
+        <sds-toolbar #toolbar="sdsToolbar" class="top-205">
             <sds-filters [form]="form" [fields]="fields" [model]="model" ></sds-filters>
         </sds-toolbar>
       <!-- </sds-page-options> -->
-      <div [sdsToolbarExpand]="toolbar" class="tablet:grid-col-fill">
+      <div [sdsToolbarExpand]="toolbar">
           <search-list-layout class="margin-left-0" [service]="searchListSampleService" [configuration]="configuration">
               <ng-template #resultContent let-item>
                   <div>
