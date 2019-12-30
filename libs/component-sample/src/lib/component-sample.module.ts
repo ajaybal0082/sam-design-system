@@ -36,6 +36,8 @@ import { ActionsMenuSampleModule } from './feature/actions-menu-sample/actions-m
 
 import { SearchSampleModule } from './feature/search-sample/search-sample.module';
 import { SearchSampleComponent } from './feature/search-sample/search-sample.component';
+import { ExternalLinkSampleComponent } from './feature/external-link-sample/external-link-sample.component';
+import { ExternalLinkSampleModule } from './feature/external-link-sample/external-link-sample.module';
 export const ROUTES: Routes = [
   { path: 'header', component: HeaderSampleComponent },
   { path: 'footer', component: FooterSampleComponent },
@@ -49,7 +51,8 @@ export const ROUTES: Routes = [
   { path: 'autocomplete', component: AutocompleteSampleComponent },
   { path: 'dialog', component: DialogSampleComponent },
   { path: 'actions-menu', component: ActionsMenuSampleComponent },
-  { path: 'search', component: SearchSampleComponent }
+  { path: 'search', component: SearchSampleComponent },
+  { path: 'external-link', component: ExternalLinkSampleComponent}
 ];
 
 @NgModule({
@@ -70,6 +73,7 @@ export const ROUTES: Routes = [
     SearchResultListSampleModule,
     SubheaderSampleModule,
     AutocompleteSampleModule,
+    ExternalLinkSampleModule,
     DialogSampleModule,
     ActionsMenuSampleModule,
     SearchSampleModule
